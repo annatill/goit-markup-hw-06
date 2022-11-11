@@ -387,15 +387,14 @@ textarea::placeholder {
 }
 
 .form-field label {
-    
-
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
-    margin-bottom: 4px;
+
     color: var(--secondary-text-color);
     text-align: start;
 }
+
 
 .form-field input {
 
@@ -403,9 +402,10 @@ textarea::placeholder {
     height: 40px;
     padding-left: 42px;
     padding-right: 10px;
-    border-color: rgba(33, 33, 33, 0.2);
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field input:hover,
@@ -413,9 +413,21 @@ textarea::placeholder {
     border-color: var(--accent-color);
 }
 
+.form-field .comment {
+    padding: 12px 16px;
+    margin-top: 4px;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.form-field .comment:hover {
+    border-color: var(--accent-color);
+}
+
 .icon-modal {
     position: absolute;
-    bottom: 17px;
+    bottom: 12px;
     left: 12px;
 
     display: inline-block;
@@ -441,6 +453,7 @@ input:focus + .icon-modal {
 
 .form-field .policy {
     margin-bottom: 0;
+    margin-left: 10px;
 }
 
 .policy a {
@@ -488,7 +501,7 @@ input:focus + .icon-modal {
 .icon-chek {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 10px;
     fill: var(--white-color);
 }
 
@@ -746,6 +759,10 @@ input:focus + .icon-modal {
     background-color: var(--footer-nav-color-background);
 }
 
+.footer .container {
+    justify-content: space-between;
+}
+
 .footer-nav {
     margin-right: 70px;
 }
@@ -867,6 +884,11 @@ input:focus + .icon-modal {
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 16px 15px;
+
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--white-color);
+
 }
 
 .btn-subscribe {
